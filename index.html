@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Thuku 2024</title>
+    <!-- Template Main CSS File -->
+   <link rel="stylesheet" href="style.css">
+   
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script>
+
+  document.addEventListener('DOMContentLoaded', function(){
+      var typedElement = document.querySelector('.typed');
+      var cursorElement = document.querySelector('.cursor');
+      var typedItems = ['A Geospatial Developer', ' A Remote Sensing Expert|', ' A Freelancer'];
+      var typingIdx = 0;
+      var wordIdx = 0;
+      var currentWord = '';
+      var isDeleting = false;
+    
+      function type() {
+        var word = typedItems[wordIdx];
+        if (!isDeleting) {
+          currentWord = word.substring(0, currentWord.length + 1);
+        } else {
+          currentWord = word.substring(0, currentWord.length - 1);
+        }
+        typedElement.textContent = currentWord;
+    
+        if (!isDeleting && currentWord === word) {
+          isDeleting = true;
+          setTimeout(type, 1500); // Wait before deleting
+        } else if (isDeleting && currentWord === '') {
+          isDeleting = false;
+          wordIdx = (wordIdx + 1) % typedItems.length;
+          setTimeout(type, 500); // Wait before typing next word
+        } else {
+          setTimeout(type, 100); // Typing speed
+        }
+      }
+    
+      type(); // Start typing
+    });
+
+
+
+   </script>
+</head>
+
+<body>
+ <header id="header">
+        <div>
+    
+          <div class="profile">
+            <img src="https://pbs.twimg.com/profile_images/1744044754688770048/o_LSEBhX_400x400.jpg" alt="" class="img1">
+            <h1 class="text-light"><a href="index.html">Peter Thuku</a></h1><br>
+              <center><a href="https://medium.com/@thukupeter487" class="fa fa-twitter"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.facebook.com/profile.php?id=100090674814412" class="fa fa-facebook"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.instagram.com/its_peter_n/" class="fa fa-instagram"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://wa.link/dre90b" class="fa fa-whatsapp"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.linkedin.com/in/peter-ndiritu-thuku-a45a81255/" class="fa fa-linkedin"></a></center>
+            
+          </div>
+    
+          <nav id="navbar" class="nav-menu navbar">
+            <ul>
+              <li><a href="#hero" class="nav-link scrollto"><i class="fa fa-home"></i> <span>Home</span></a></li>
+              <li><a href="#about" class="nav-link scrollto"><i class="fa fa-user"></i> <span>About</span></a></li>
+              <li><a href="#resume" class="nav-link scrollto"><i class="fa fa-server"></i> <span>Resume</span></a></li>
+              <li><a href="#portfolio" class="nav-link scrollto"><i class="fa fa-server"></i> <span>Portfolio</span></a></li>
+              <li><a href="#services" class="nav-link scrollto"><i class="fa fa-server"></i> <span>Awards</span></a></li>
+              <li><a href="#contact" class="nav-link scrollto"><i class="fa fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+    
+          </nav><!-- .nav-menu -->
+
+          <br><br><br><br>
+          <div class="copyright" style="color: blue;">
+            &copy; Copyright <strong><span>Peter Thuku 2024</span></strong>
+          </div>
+        </div>
+  </header><!-- End Header -->
+
+
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style="width: 100%; height: 120vh;">
+    
+    <div class="centered">
+
+      <h1 style="font-size: 64px; color: white; position: relative; font-weight: 700; line-height: 56px;">Peter Thuku</h1>
+      <p><span class="typed" style="color: rgb(245, 241, 240); font-size: 26px; font-family: sans-serif; padding-bottom: 4px; letter-spacing: 1px;
+        border-bottom: 3px solid #149ddd;"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about" style="width: 100%; height: 100vh;">
+    <div class="container">
+     <div class="section-title">
+      <h2>About</h2>
+      <p>As a passionate professional in the GIS and remote sensing field, I thrive on leveraging geospatial technologies to tackle complex challenges and uncover insights that drive decision-making. With a solid background in spatial analysis, data visualization, and environmental monitoring, I'm dedicated to harnessing the power of geospatial data to address real-world issues and contribute to sustainable solutions.</p>
+      </div>
+      <img src="https://pbs.twimg.com/profile_images/1744044754688770048/o_LSEBhX_400x400.jpg" style="float: left;">
+     
+        <div style="margin-left: 500px;">
+        <ul>
+          <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>28<sup>th</sup>December 2003</span></li><br>
+          <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 113143372</span></li><br>
+          <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>thukupeter487@gmail.com</span></li><br>
+          <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nyahururu, Kenya</span></li><br>
+          <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bsc GIS & Remote Sensing</span></li><br>
+          <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+        </ul>
+      </div>
+    
+    </div>
+  </section><!-- End About Section -->
+
+
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume" style="width: 100%; height: 130vh;">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Resume</h2>
+ 
+    </div>
+<div>
+  <div style="float: left;">
+    
+     
+        <h2 class="resume-title">Summary</h2>
+        
+          <p><em>Innovative and deadline-driven Imagery Expert, Geospatial Developer with 3+ years <br>of experience anlyzing and developing user-centered Geospatial Oriented <br>Applications from initial concept to final, polished deliverable.</em></p>
+          <ul>
+            <li>Nyahururu, Kenya</li>
+            <li>(+254) 113143372</li>
+            <li>thukupeter487@gmail.com</li>
+          </ul>
+        
+
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <ul>
+          <li><h4>BSc GIS & Remote Sensing, 2021 - 2025</h4></li>
+         
+          <p><em>Dedan Kimathi University of Technology ( DeKUT ), Nyeri, Kenya</em></p>
+          
+          <li><h4>Certificate in African Space Strategy & Policy</h4></li>
+          
+          <p><em>African Space Leadership Institute ( ASLI )</em></p>
+          
+          <li><h4>Certificate in Drone & Data Academy </h4></li>
+          
+          <p><em>African Drone & Data Academy ( ADDA )</em></p>
+          
+      </ul>
+    </div>
+    <br><br><br>
+    <a href="https://drive.google.com/file/d/13zU2HIQYxE4rCZvDRQ_EqojLmzlcrAXS/view?usp=sharing"><button style="margin-left: 100px; color: rgb(37, 37, 221); height: 30px; border-radius: 5px;">Download My CV</button></a>
+  </div>
+    <div style="margin-left: 600px;">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Professional Experience</h3>
+        <div class="resume-item">
+          <h4>Geospatial Developer & Imagery Intelligence Specialist</h4>
+          <h5>2023 - Present</h5>
+          <p><em>Remote Freelance </em></p>
+          <ul>
+            <li>Reaserch, Development, and Implementation of the UI layout,<br> and production of Geospatial Applications.</li><br>
+            <li>Field Surveying, GeoSpatial Data Collection, Analysis & Visualization by utilizing various Tools & Platforms.</li><br>
+            <li>OpenEO Imagery Analysis across various platforms; GEE, Jupyter Notebooks.</li>
+           </ul>
+        </div>
+        <div class="resume-item">
+          <h4>Research Attachee</h4>
+          <h5>January 2024 - April 2024</h5>
+          <p><em>GeoSURV Systems Ltd, Nairobi, Kenya</em></p>
+          <ul>
+            <li>Undertook Cadastral Boundary Surveys ( Road Reserve Surveys ).</li><br>
+            <li>Tasked on Spatial Planning - Parcel Subdivision & On-Ground Beacon monumentation.</li><br>
+            <li>Created Survey Plans, Deed Plans, Surveyor's Reports among other Official Documentations.</li>
+            <!-- <li></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+</section><!-- End Resume Section -->
+
+
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg" style="width: 100%; height: 250vh;">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <p> As a dedicated professional in this field, I have leveraged cutting-edge technologies and spatial analysis techniques to tackle complex geospatial challenges. From mapping and spatial data analysis to remote sensing applications, my portfolio demonstrates a diverse range of projects and accomplishments.</p>
+    </div>
+  
+      <div>
+        <ul id="portfolio-flters">
+          <strong><li data-filter="*" style="color: blue;">Geospatial Sample Projects</li></strong>
+        </ul>
+      </div>
+
+      <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*Ni18410k-cz1l8ARnwb1Zw.png" style="float: left;">
+     
+      <div style="margin-left: 700px;"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*fm2NcR68ko0T00-CUhgVUg.png"></div>
+    <br>
+      <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*reAU2yJe_QMY0KpXj6cGkQ.png" style="float: left;">
+     
+      <div style="margin-left: 700px;"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*gC3Hhoq8i_u13d1uGWvYog.png"></div>
+<br>
+      <img src="https://media.licdn.com/dms/image/D4D22AQFrs1cTgav29A/feedshare-shrink_800/0/1713762668398?e=1717632000&v=beta&t=Ha2-l3wByzjWwLty4IbYeXd25Fx4eCSB_y_jrVuFjoM" style="float: left;">
+     
+      <div style="margin-left: 840px;"><img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/305882411/original/a377d34cdbd4936259dc55613f6484b260d38458/do-ndvi-visualization-of-any-area.png"></div>
+      
+    <br><br><br><br><br>
+
+    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*nmCyYDqa2BSJb_rc4PeQ9w.png" style="float: left;">
+     
+      <div style="margin-left: 700px;"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*rSqc6IZp0r5YTrGq_J42aQ.png"></div>
+      
+   
+
+
+   
+
+    
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+
+
+
+    <!-- ======= Awards Section ======= -->
+    <section id="services" class="services" style="width: 100%; height: 130vh;">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Honors & Awards</h2>
+        <div>
+              <div style="float: left;">
+
+                <ul>
+                  <li><h3>Certificate (s) in  Scientific Manuscript Research Peer Review. Issued by &nbsp; <em style="color: blue;">B P International &nbsp;</em>on 8<sup>th</sup>January 2024, 20<sup>th</sup> & 15<sup>th</sup> December 2023  </li> </h3> 
+                  
+                  <li><h3>Certificate in African Space Strategy & Policy. Issued by &nbsp; <em style="color: blue;"> African Space Leadership Institute ( ASLI )&nbsp;</em> on 14<sup>th</sup> December 2023</h3></li>
+                  
+                  <li><h3>Certificate in SuperMap Software Training. Issued by &nbsp; <em style="color: blue;">DRSRS & SuperMap </em>&nbsp; on 23<sup>rd</sup> November 2023 </li> </h3> 
+                  
+                  <li><h3>Certificate of Merit Academic Year 2022/2023 ( 1<sup>st</sup> Position ). Issued by &nbsp; <em style="color: blue;"> DeKUT &nbsp;</em> on 15<sup>th</sup> November 2023</h3></li>
+                  
+                  <li><h3>Certificate in  European Union Remote Pilot License ( EU  RPL ). Issued by &nbsp; <em style="color: blue;">European Union Aviation Safety Authority ( EASA ), EU Control &nbsp;</em>on 25<sup>th</sup>October 2023 </li> </h3> 
+                  
+                  <li><h3>Certificate in Drone & Data Technology Level 1. Issued by &nbsp; <em style="color: blue;"> Virginia  Tech, Furman University, and MUST &nbsp;</em> on 20<sup>th</sup> October 2023</h3></li>
+                  
+                  <li><h3>Certificate in Trusted Operator  Program (TOP) Level 1. Issued by &nbsp; <em style="color: blue;">Association of Uncrewed Vehicle Systems International (AUVSI) </em>&nbsp; on 20<sup>th</sup> October 2023 </li> </h3> 
+                  
+                  <li><h3>Certificate  in Wetlands Vulnerability Analysis Training. Issued by &nbsp; <em style="color: blue;"> RCMRD, Makerere University , AGRC2023 , GMES & Africa &nbsp;</em> on 15<sup>th</sup> August 2023</h3></li>
+                  
+                  <li><h3>Certificate in Cartography. Issued by &nbsp; <em style="color: blue;">ESRI &nbsp;</em>on 3<sup>rd</sup>April 2023</li> </h3> 
+                  
+                  <li><h3>Certificate  in Introduction to  Artificial Intelligence. Issued by &nbsp; <em style="color: blue;"> SkillUP by Simplilearn &nbsp;</em> on 10<sup>th</sup> February 2023</h3></li>
+                  
+                  <li><h3>Certificate  in Data Visualization Using Python. Issued by &nbsp; <em style="color: blue;">Great Learning Academy</em>&nbsp; on 3<sup>rd</sup> February 2023 </li> </h3> 
+                  
+                  <li><h3>Certificate  in DEA Water Resources. Issued by &nbsp; <em style="color: blue;"> Digital Earth Africa &nbsp;</em> on 26<sup>th</sup> January 2023</h3></li>
+                  
+                  <li><h3>Certificate in Introduction to Digital Earth Africa Sandbox. Issued by &nbsp; <em style="color: blue;">Digital Earth Africa &nbsp;</em>on 25<sup>th</sup>January 2023</li> </h3> 
+                  
+                  <li><h3>Certificate of   Merit Academic Year 2021/2022 ( 1<sup>st</sup> Position ). Issued by &nbsp; <em style="color: blue;"> DeKUT &nbsp;</em> on 14<sup>th</sup> November 2023</h3></li>
+                  
+                  <li><h3>Certificate in Computer Studies. Issued by &nbsp; <em style="color: blue;"> St. Anne's Catholic Institute &nbsp;</em> on 23<sup>rd</sup> September 2021</h3></li>
+                  
+                  
+                  
+                  
+                  
+              </ul>
+
+              </div>
+
+              <div style="margin-left: 600px;">
+              
+              
+              
+              </div>
+
+        </div>
+    </section><!-- End Awards Section -->
+
+
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact" style="width: 100%; height: 120vh;">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>Are you're interested in discussing Geospatial analysis, Remote Sensing Applications, or potential partnerships, I'm here to connect. Feel free to drop me a message using the contacts below.</p>
+    </div>
+
+    <div class="row" data-aos="fade-in">
+
+     
+      <div>
+         <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>Remote, Kenya</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>thukupeter487@gmail.com</p>
+          </div>
+
+          <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+254 113143372</p>
+          </div>       
+         </div>
+         
+      </div>
+
+      
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+
+</main><!-- End #main -->
+
+
+
+
+
+</body>
+</html>
